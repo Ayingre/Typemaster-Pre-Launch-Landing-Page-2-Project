@@ -1,11 +1,16 @@
 /* Reset */
+/* html{
+    background-color: yellow;
+} */
+
 body{
-    position: absolute;
+    /* position: absolute; */
     margin: 0px;
     font-family: barlow;
     font-weight: 500px;
     color: #7B8BAD;
     overflow-x: hidden;
+    /* background-color: blue; */
 }
 
 /* Header section */
@@ -110,14 +115,20 @@ body{
 }
 
 .first-section-empty{
-    margin: 0px 0px 0px 1.875rem;
+    /* margin: 0px 0px 0px 1.875rem; */
+    /* background-color: pink; */
+    width: 3.125rem;
+    
 }
 
 .first-section-emptybox{
+    position: absolute;
     background-color:#E8EFF2;
     height: 15rem;
     width: 3.125rem;
     border-radius: 1.25rem 0px 0px 1.25rem;
+    right: 0;
+    /* background-color: green; */
 }
 
 .middle-section{
@@ -139,7 +150,7 @@ body{
     position:relative;
 }
 
-.overlay{
+/* .overlay{
     position: absolute;
     background-color: #f16818c4;
     z-index: 0px;
@@ -147,7 +158,7 @@ body{
     width: 15.938rem;
     border-radius: 0.938rem;
     margin: 0px 0px 0px 0px;
-}
+} */
 
 .middle-section-keyboard-phone-image{
     background-image: url(assets/desktop/image-phone-and-keyboard-desktop.jpg);
@@ -158,6 +169,12 @@ body{
     border-radius: 0.938rem;
     margin: 0px 0px 0px 0px;
 
+}
+
+.middle-section-keyboard-phone-image{
+    overflow: hidden;
+    background-color: #F16718;
+    background-blend-mode: multiply;
 }
 
 .middle-section-keyboard-glass-image{
