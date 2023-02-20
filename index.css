@@ -1,16 +1,14 @@
-/* Reset */
-/* html{
-    background-color: yellow;
-} */
 
 body{
-    /* position: absolute; */
+    display: grid;
+    grid-template-columns: 1;
     margin: 0px;
     font-family: barlow;
     font-weight: 500px;
     color: #7B8BAD;
     overflow-x: hidden;
-    /* background-color: blue; */
+    width: 100%;
+    justify-content: start;
 }
 
 /* Header section */
@@ -21,7 +19,7 @@ body{
     flex-direction: row;
     height: 3.625rem;
     margin: 3.438rem 0 5.313rem 0;
-    justify-content: center;
+    justify-content: space-between;
     align-content:center;
 }
 
@@ -30,7 +28,7 @@ body{
     flex-direction: row;
     height: 3.625rem;
     width: 100%;
-    margin: 0px 75px 0px 165px;
+    margin: 0px 22px 0px 165px;
     justify-content: space-between;
     align-content:center;
     align-items: center;
@@ -111,14 +109,7 @@ body{
     height: 30rem;
     width: 33.75rem;
     border-radius: 1.25rem;
-    margin: 0px 0px 0px 100px;
-}
-
-.first-section-empty{
-    /* margin: 0px 0px 0px 1.875rem; */
-    /* background-color: pink; */
-    width: 3.125rem;
-    
+    margin: 0px 20px 0px 100px;
 }
 
 .first-section-emptybox{
@@ -128,13 +119,12 @@ body{
     width: 3.125rem;
     border-radius: 1.25rem 0px 0px 1.25rem;
     right: 0;
-    /* background-color: green; */
 }
 
 .middle-section{
     display: flex;
     flex: 1 1 1 1;
-    justify-content: start;
+    justify-content: space-between;
     margin-top: 1.875rem;
 }
 
@@ -149,16 +139,6 @@ body{
 .middle-section-keyboard-phone{
     position:relative;
 }
-
-/* .overlay{
-    position: absolute;
-    background-color: #f16818c4;
-    z-index: 0px;
-    height: 30rem;
-    width: 15.938rem;
-    border-radius: 0.938rem;
-    margin: 0px 0px 0px 0px;
-} */
 
 .middle-section-keyboard-phone-image{
     background-image: url(assets/desktop/image-phone-and-keyboard-desktop.jpg);
@@ -208,7 +188,7 @@ body{
 
 .last-section{
     display:flex;
-    justify-content: start;
+    justify-content: space-between;
 }
 
 
@@ -286,6 +266,7 @@ h1{
 }
 
 /* Footer Section */
+
 .footer-section{
     display: flex;
     flex: 1;
@@ -309,6 +290,8 @@ font-weight: 31.25rem;
 /* Reset */
 
     body{
+    display:flex ;
+    flex-direction: column;
     position: relative;
      margin: 0px;
      font-family: barlow;
@@ -420,6 +403,7 @@ font-weight: 31.25rem;
  }
 
  .first-section-emptybox{
+    display: none;
      background-color:#E8EFF2;
      height: 240px;
      width: 50px;
@@ -442,18 +426,6 @@ font-weight: 31.25rem;
 
  }
 
- .overlay{
-     position: absolute;
-     background-color: #f16818c4;
-     height: 70px;
-     width: 70px;
-     z-index: 0px;
-     height: 320px;
-     width: 214px;
-     border-radius: 15px;
-     margin: 0px 0px 0px 36px;
- }
-
  .middle-section-keyboard-phone-image{
      background-image: url(assets/tablet/image-phone-and-keyboard-tablet.jpg);
      background-repeat: no-repeat;
@@ -462,8 +434,13 @@ font-weight: 31.25rem;
      width: 214px;
      border-radius: 15px;
      margin: 0px 0px 0px 36px;
-     /* filter: invert(46%) sepia(68%) saturate(2988%) hue-rotate(355deg) brightness(100%) contrast(90%); */
  }
+
+ .middle-section-keyboard-phone-image{
+    overflow: hidden;
+    background-color: #F16718;
+    background-blend-mode: multiply;
+}
 
  .middle-section-keyboard-glass-image{
      background-image: url(assets/tablet/image-glass-and-keyboard-tablet.jpg);
@@ -730,13 +707,16 @@ font-weight: 500px;
         width: 23.25rem;
         border-radius: 20px 0px 0px 20px;
         margin: 0px 0px 0px 0px;
-    
+
     }
 
     .first-section-empty{
        display: none;
     }
-
+ 
+    .first-section-emptybox{
+        display: none;
+    }
 
 
     .middle-section{
@@ -754,16 +734,6 @@ font-weight: 500px;
         display: inline-block;
     }
 
-    .overlay{
-        position: absolute;
-        background-color: #f16818c4;
-        z-index: 0px;
-        height: 193px;
-        width: 129px;
-        border-radius: 0px 20px 20px 0px;
-        margin: 0px 0px 0px -22px;
-    }
-
     .middle-section-keyboard-phone-image{
         background-image: url(assets/mobile/image-phone-and-keyboard-desktop.jpg);
         background-repeat: no-repeat;
@@ -772,8 +742,14 @@ font-weight: 500px;
         width: 129px;
         border-radius: 0px 20px 20px 0px;
         margin: 0px 0px 0px -22px;
-        /* filter: invert(46%) sepia(68%) saturate(2988%) hue-rotate(355deg) brightness(100%) contrast(90%); */
     }
+
+    .middle-section-keyboard-phone-image{
+        overflow: hidden;
+        background-color: #F16718;
+        background-blend-mode: multiply;
+    }
+    
 
     .middle-section-keyboard-glass-image{
         background-image: url(assets/mobile/image-glass-and-keyboard-mobile.jpg);
